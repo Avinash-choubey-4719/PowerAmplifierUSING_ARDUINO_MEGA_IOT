@@ -8,6 +8,13 @@
 ->52 leds
 ![image](https://user-images.githubusercontent.com/104202659/167266086-fe9b4601-2fd7-4a28-a329-6d12896aaf99.png)
 
+->12-0-12  transformer
+![image](https://user-images.githubusercontent.com/104202659/205042041-88b549eb-d7ad-48d5-aca5-abd52fdced35.png)
+
+->D718 power transistor x4
+![image](https://user-images.githubusercontent.com/104202659/205042206-b7f3b2ee-6dda-4426-96e2-58a5a596f63c.png)
+
+
 ->jumber wires/cables
 ![image](https://user-images.githubusercontent.com/104202659/167266111-1af6fc84-bf05-42ce-b003-bdad88741ce6.png)
 
