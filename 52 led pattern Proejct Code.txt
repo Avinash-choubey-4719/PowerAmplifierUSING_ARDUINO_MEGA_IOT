@@ -1,0 +1,465 @@
+/******************************************************************
+ Created with thingerbits Academy for Arduino - 16.03.2020 23:29:38
+ Project     : 9 LED Pattern
+ Author      : Avinash choubey
+ Description : Arduino PIN d3 to D12
+******************************************************************/
+
+int t = 40;
+int rnd =5;
+int pat1t =75;
+
+void setup()
+{
+   for(int i=3; i<=52; i++) 
+   pinMode(i,OUTPUT);
+}
+
+void loop(){
+
+   for(int i=0; i<=rnd; i++) {
+   pat1();}
+   for(int i=0; i<=rnd; i++){ 
+   pat2();}
+   for(int i=0; i<=rnd; i++) {
+   pat3();}
+   for(int i=0; i<=rnd; i++) {
+   pat4();}
+   for(int i=0; i<=rnd; i++){ 
+   pat5();}
+   for(int i=0; i<=rnd; i++) {
+   pat6();}
+   for(int i=0; i<=rnd; i++) {
+   pat7();}
+   for(int i=0; i<=rnd; i++) {
+   pat8();}
+   for(int i=0; i<=rnd; i++) {
+   pat9();}
+  
+  
+}
+  
+void pat1(){ 
+    for(int i=3; i<=52; i++) {
+      digitalWrite(i,HIGH);
+      delay(pat1t);
+      digitalWrite(i,LOW);
+ 
+    }
+    
+    for(int i=51; i>=4; i--) {
+      digitalWrite(i,HIGH);
+      delay(pat1t);
+      digitalWrite(i,LOW);
+    }
+}   
+void pat2(){
+     for(int i=3; i<=52; i++) {
+      digitalWrite(i,HIGH);
+      digitalWrite(i-1,HIGH);
+      digitalWrite(i+1,HIGH);
+      delay(100);
+      digitalWrite(i,LOW);
+      digitalWrite(i-1,LOW);
+      digitalWrite(i+1,LOW);
+    }
+    
+    for(int i=51; i>=4; i--) {
+      digitalWrite(i,HIGH);
+      digitalWrite(i-1,HIGH);
+      digitalWrite(i+1,HIGH);
+      delay(100);
+      digitalWrite(i,LOW);
+      digitalWrite(i-1,LOW);
+      digitalWrite(i+1,LOW);
+    }
+}
+void pat3(){
+  for(int i=3; i<=52; i=i+2) {
+      digitalWrite(i,HIGH);
+      delay(100);
+      digitalWrite(i,LOW);
+ 
+    }
+    
+    for(int i=52; i>=3; i=i-2) {
+      digitalWrite(i,HIGH);
+      delay(100);
+      digitalWrite(i,LOW);
+    }       
+}
+void pat4(){   
+      for(int i=3; i<=52; i++) {
+      digitalWrite(i,HIGH);
+      delay(100);
+    }
+    
+    for(int i=52; i>=2; i--) {
+      digitalWrite(i,HIGH);
+      delay(100);
+      digitalWrite(i,LOW);
+    }
+}
+void pat5(){
+     for(int i=3; i<=52; i++) {
+      digitalWrite(i,HIGH);
+      }
+    delay(100);
+    for(int i=3; i<=52; i++) {
+      digitalWrite(i,LOW);
+      }
+    delay(100);  
+}
+void pat6(){
+       for(int i=3; i<=28; i++) {
+      digitalWrite(i,HIGH);
+      }
+    for(int i=28; i<=52; i++) {
+      digitalWrite(i,LOW);
+      }
+    delay(200);
+    for(int i=3; i<=28; i++) {
+      digitalWrite(i,LOW);
+      }
+    for(int i=28; i<=52; i++) {
+      digitalWrite(i,HIGH);
+      }
+    delay(200);
+}
+void pat7(){
+       for(int i=3; i<=52; i=i+2) {
+      digitalWrite(i,HIGH);
+      }
+    for(int i=4; i<=52; i=i+2) {
+      digitalWrite(i,LOW);
+      }
+    delay(200);
+     for(int i=3; i<=52; i=i+2) {
+      digitalWrite(i,LOW);
+      }
+    for(int i=4; i<=52; i=i+2) {
+      digitalWrite(i,HIGH);
+      }
+    delay(200);
+}
+void pat8(){
+    digitalWrite(27,HIGH);
+    digitalWrite(28,HIGH);
+    delay(t);
+    digitalWrite(27,LOW);
+    digitalWrite(28,LOW);
+    delay(t);
+    digitalWrite(26,HIGH);
+    digitalWrite(29,HIGH);
+    delay(t);
+    digitalWrite(26,LOW);
+    digitalWrite(29,LOW);
+    delay(t);
+    digitalWrite(25,HIGH);
+    digitalWrite(30,HIGH);
+    delay(t);
+    digitalWrite(25,LOW);
+    digitalWrite(30,LOW);
+    delay(t);
+    digitalWrite(24,HIGH);
+    digitalWrite(31,HIGH);
+    delay(t);
+    digitalWrite(24,LOW);
+    digitalWrite(31,LOW);
+    delay(t);
+    digitalWrite(23,HIGH);
+    digitalWrite(32,HIGH);
+    delay(t);
+    digitalWrite(23,LOW);
+    digitalWrite(32,LOW);
+    delay(t);
+    digitalWrite(22,HIGH);
+    digitalWrite(33,HIGH);
+    delay(t);
+    digitalWrite(22,LOW);
+    digitalWrite(33,LOW);
+    delay(t);
+    digitalWrite(21,HIGH);
+    digitalWrite(34,HIGH);
+    delay(t);
+    digitalWrite(21,LOW);
+    digitalWrite(34,LOW);
+    delay(t);
+    digitalWrite(20,HIGH);
+    digitalWrite(35,HIGH);
+    delay(t);
+    digitalWrite(20,LOW);
+    digitalWrite(35,LOW);
+    delay(t);
+    digitalWrite(19,HIGH);
+    digitalWrite(36,HIGH);
+    delay(t);
+    digitalWrite(19,LOW);
+    digitalWrite(36,LOW);
+    delay(t);
+    digitalWrite(18,HIGH);
+    digitalWrite(37,HIGH);
+    delay(t);
+    digitalWrite(18,LOW);
+    digitalWrite(37,LOW);
+    delay(t);
+    digitalWrite(17,HIGH);
+    digitalWrite(38,HIGH);
+    delay(t);
+    digitalWrite(17,LOW);
+    digitalWrite(38,LOW);
+    delay(t);
+    digitalWrite(16,HIGH);
+    digitalWrite(39,HIGH);
+    delay(t);
+    digitalWrite(16,LOW);
+    digitalWrite(39,LOW);
+    delay(t);
+    digitalWrite(15,HIGH);
+    digitalWrite(40,HIGH);
+    delay(t);
+    digitalWrite(15,LOW);
+    digitalWrite(40,LOW);
+    delay(t);
+    digitalWrite(14,HIGH);
+    digitalWrite(41,HIGH);
+    delay(t);
+    digitalWrite(14,LOW);
+    digitalWrite(41,LOW);
+    delay(t);
+    digitalWrite(13,HIGH);
+    digitalWrite(42,HIGH);
+    delay(t);
+    digitalWrite(13,LOW);
+    digitalWrite(42,LOW);
+    delay(t);
+    digitalWrite(12,HIGH);
+    digitalWrite(43,HIGH);
+    delay(t);
+    digitalWrite(12,LOW);
+    digitalWrite(43,LOW);
+    delay(t);
+    digitalWrite(11,HIGH);
+    digitalWrite(44,HIGH);
+    delay(t);
+    digitalWrite(11,LOW);
+    digitalWrite(44,LOW);
+    delay(t);
+    digitalWrite(10,HIGH);
+    digitalWrite(45,HIGH);
+    delay(t);
+    digitalWrite(10,LOW);
+    digitalWrite(45,LOW);
+    delay(t);
+    digitalWrite(9,HIGH);
+    digitalWrite(46,HIGH);
+    delay(t);
+    digitalWrite(9,LOW);
+    digitalWrite(46,LOW);
+    delay(t);
+    digitalWrite(8,HIGH);
+    digitalWrite(47,HIGH);
+    delay(t);
+    digitalWrite(8,LOW);
+    digitalWrite(47,LOW);
+    delay(t);
+    digitalWrite(7,HIGH);
+    digitalWrite(48,HIGH);
+    delay(t);
+    digitalWrite(7,LOW);
+    digitalWrite(48,LOW);
+    delay(t);
+    digitalWrite(6,HIGH);
+    digitalWrite(49,HIGH);
+    delay(t);
+    digitalWrite(6,LOW);
+    digitalWrite(49,LOW);
+    delay(t);
+    digitalWrite(5,HIGH);
+    digitalWrite(50,HIGH);
+    delay(t);
+    digitalWrite(5,LOW);
+    digitalWrite(50,LOW);
+    delay(t);
+    digitalWrite(4,HIGH);
+    digitalWrite(51,HIGH);
+    delay(t);
+    digitalWrite(4,LOW);
+    digitalWrite(51,LOW);
+    delay(t);
+    digitalWrite(3,HIGH);
+    digitalWrite(52,HIGH);
+    delay(t);
+    digitalWrite(3,LOW);
+    digitalWrite(52,LOW);
+    delay(t);
+
+    digitalWrite(4,HIGH);
+    digitalWrite(51,HIGH);
+    delay(t);
+    digitalWrite(4,LOW);
+    digitalWrite(51,LOW);
+    delay(t);
+    digitalWrite(5,HIGH);
+    digitalWrite(50,HIGH);
+    delay(t);
+    digitalWrite(5,LOW);
+    digitalWrite(50,LOW);
+    delay(t);
+    digitalWrite(6,HIGH);
+    digitalWrite(49,HIGH);
+    delay(t);
+    digitalWrite(6,LOW);
+    digitalWrite(49,LOW);
+    delay(t);
+    digitalWrite(7,HIGH);
+    digitalWrite(48,HIGH);
+    delay(t);
+    digitalWrite(7,LOW);
+    digitalWrite(48,LOW);
+    delay(t);
+    digitalWrite(8,HIGH);
+    digitalWrite(47,HIGH);
+    delay(t);
+    digitalWrite(8,LOW);
+    digitalWrite(47,LOW);
+    delay(t);
+    digitalWrite(9,HIGH);
+    digitalWrite(46,HIGH);
+    delay(t);
+    digitalWrite(9,LOW);
+    digitalWrite(46,LOW);
+    delay(t);
+    digitalWrite(10,HIGH);
+    digitalWrite(45,HIGH);
+    delay(t);
+    digitalWrite(10,LOW);
+    digitalWrite(45,LOW);
+    delay(t);
+    digitalWrite(11,HIGH);
+    digitalWrite(44,HIGH);
+    delay(t);
+    digitalWrite(11,LOW);
+    digitalWrite(44,LOW);
+    delay(t);
+    digitalWrite(12,HIGH);
+    digitalWrite(43,HIGH);
+    delay(t);
+    digitalWrite(12,LOW);
+    digitalWrite(43,LOW);
+    delay(t);
+    digitalWrite(13,HIGH);
+    digitalWrite(42,HIGH);
+    delay(t);
+    digitalWrite(13,LOW);
+    digitalWrite(42,LOW);
+    delay(t);
+    digitalWrite(14,HIGH);
+    digitalWrite(41,HIGH);
+    delay(t);
+    digitalWrite(14,LOW);
+    digitalWrite(41,LOW);
+    delay(t);
+    digitalWrite(15,HIGH);
+    digitalWrite(40,HIGH);
+    delay(t);
+    digitalWrite(15,LOW);
+    digitalWrite(40,LOW);
+    delay(t);
+    digitalWrite(16,HIGH);
+    digitalWrite(39,HIGH);
+    delay(t);
+    digitalWrite(16,LOW);
+    digitalWrite(39,LOW);
+    delay(t);
+    digitalWrite(17,HIGH);
+    digitalWrite(38,HIGH);
+    delay(t);
+    digitalWrite(17,LOW);
+    digitalWrite(38,LOW);
+    delay(t);
+    digitalWrite(18,HIGH);
+    digitalWrite(37,HIGH);
+    delay(t);
+    digitalWrite(18,LOW);
+    digitalWrite(37,LOW);
+    delay(t);
+    digitalWrite(19,HIGH);
+    digitalWrite(36,HIGH);
+    delay(t);
+    digitalWrite(19,LOW);
+    digitalWrite(36,LOW);
+    delay(t);
+    digitalWrite(20,HIGH);
+    digitalWrite(35,HIGH);
+    delay(t);
+    digitalWrite(20,LOW);
+    digitalWrite(35,LOW);
+    delay(t);
+    digitalWrite(21,HIGH);
+    digitalWrite(34,HIGH);
+    delay(t);
+    digitalWrite(21,LOW);
+    digitalWrite(34,LOW);
+    delay(t);
+    digitalWrite(22,HIGH);
+    digitalWrite(33,HIGH);
+    delay(t);
+    digitalWrite(22,LOW);
+    digitalWrite(33,LOW);
+    delay(t);
+    digitalWrite(23,HIGH);
+    digitalWrite(32,HIGH);
+    delay(t);
+    digitalWrite(23,LOW);
+    digitalWrite(32,LOW);
+    delay(t);
+    digitalWrite(24,HIGH);
+    digitalWrite(31,HIGH);
+    delay(t);
+    digitalWrite(24,LOW);
+    digitalWrite(31,LOW);
+    delay(t);
+    digitalWrite(25,HIGH);
+    digitalWrite(30,HIGH);
+    delay(t);
+    digitalWrite(25,LOW);
+    digitalWrite(30,LOW);
+    delay(t);
+    digitalWrite(26,HIGH);
+    digitalWrite(29,HIGH);
+    delay(t);
+    digitalWrite(26,LOW);
+    digitalWrite(29,LOW);
+    delay(t);
+    digitalWrite(27,HIGH);
+    digitalWrite(28,HIGH);
+    delay(t);
+    digitalWrite(27,LOW);
+    digitalWrite(28,LOW);
+    delay(t);
+}    
+
+void pat9(){ 
+    for(int i=3; i<=52; i++) {
+      digitalWrite(i,HIGH);
+    }
+     for(int i=3; i<=52; i++) {
+      digitalWrite(i,LOW);
+      delay(100);
+      digitalWrite(i,HIGH);
+    }
+    for(int i=51; i>=4; i--) {
+      digitalWrite(i,LOW);
+      delay(100);
+      digitalWrite(i,HIGH);
+    }
+  
+}  
+
+
+
+
+
+
+
